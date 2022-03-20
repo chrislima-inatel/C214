@@ -24,4 +24,14 @@ public class BuscaInimigo {
                 jsonObject.get("arma").getAsString());
     }
 
+    public boolean verificaArrayListExistente(int id){
+        boolean inimigoExistente = inimigoService.inimigoExistente(id);
+
+        if (inimigoExistente){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
