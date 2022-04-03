@@ -1,4 +1,4 @@
-package br.inatel.cdg.aula_08.achievment;
+package br.inatel.cdg.aula_08.achievmentex4;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,9 +7,9 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import br.inatel.cdg.aula_08.achievement.AchievmentMessages;
-import br.inatel.cdg.aula_08.achievement.RecebedorMSG;
-import br.inatel.cdg.aula_08.achievement.SemRecebedoresException;
+import br.inatel.cdg.aula_08.achievementex4.AchievmentMessages;
+import br.inatel.cdg.aula_08.achievementex4.RecebedorMSG;
+import br.inatel.cdg.aula_08.achievementex4.SemRecebedoresException;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TesteAchievmentNotifier {
