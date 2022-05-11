@@ -1,4 +1,4 @@
-package br.inatel.cdg.teste.pato;
+package br.inatel.cdg.teste.compras;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
