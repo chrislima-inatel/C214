@@ -24,7 +24,7 @@ public class TesteCarrinhoCompra {
 	}
 
 
-	// Teste inicial básico (Padrão 1) + algo diferente (teste valor total da compra) (Padrão 2)
+	// Teste inicial básico (Padrão 1) + algo diferente (teste valor total de itens) (Padrão 2)
 	@Test
 	public void testSomaTotalQtd() throws NumeroNegativoException {
 
