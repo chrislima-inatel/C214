@@ -23,6 +23,10 @@ public class Netflix {
 		netflix.setNovoAnuncioNetflix("BBB", "Comedia");
 
 		netflix.removeObservador(obs3);
+
+
+
+
 		System.out.println("\n\nMandando notificação para todos os clientes: ");
 		netflix.notificaObservadores();
 
