@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.inatel.cdg.musicas.Playlists;
+import br.inatel.cdg.musicas.Musicas;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -13,16 +13,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		List<Playlists> musicas = new ArrayList<Playlists>();
+		List<Musicas> musicas = new ArrayList<Musicas>();
 		
-		musicas.add(new Playlists("https://open.spotify.com/playlist/1Zuf4z9u26AxGB5xi0qtjt?si=54310c9ee1764e96", 272));
-		musicas.add(new Playlists("https://open.spotify.com/playlist/5Pc7evOjtB1CaRddwLh6i4?si=a1bfd50bf81b46f1", 307));
-		
-		Gson gson = new GsonBuilder().
-					setPrettyPrinting().create();
-		
+		musicas.add(new Musicas("Musica1", 3));
+		musicas.add(new Musicas("Musica2", 5));
+
+		//gson instanciado com PrettyPrinting()
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+		//Criando o JSON a partir da lista de musicas com a dependencia gson
 		String json = gson.toJson(musicas);
-		
+
+		//Escrevendo o json criado no arquivo musicas.json
 		FileWriter writer;
 		try {
 			writer = new FileWriter("musicas.json");
