@@ -39,6 +39,18 @@ public class TesteBuscaInimigo {
     }
 
     @Test
+    public void testeBuscaInimigoInvalido(){
+        Mockito.when(service.busca(56)).thenReturn(InimigoConst.INEXISTENTE);
+
+        Inimigo skeleton = buscaInimigo.buscaInimigo(56);
+        //Faz assertion
+        assertEquals("Inexistente", skeleton.getNome());
+        assertEquals(0, skeleton.getQtdVida(), 0.1);
+        assertEquals("Inexistente", skeleton.getArma());
+
+    }
+
+    @Test
     public void testeBuscaInimigoValido(){
 
         Mockito.when(service.inimigoExistente(10)).thenReturn(true);
