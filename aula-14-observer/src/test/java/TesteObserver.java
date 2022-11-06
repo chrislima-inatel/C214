@@ -24,4 +24,17 @@ public class TesteObserver {
         netflix.registraObservador(obs3);
         assertEquals(netflix.getClientes().size(), 3);
     }
+
+    @Test
+    public void teste2Inscritos(){
+        Observavel netflix = new Observavel();
+        Observador obs1 = new Observador(1);
+        Observador obs2 = new Observador(2);
+        Observador obs3 = new Observador(3);
+        netflix.registraObservador(obs1);
+        netflix.registraObservador(obs2);
+        netflix.registraObservador(obs3);
+        netflix.removeObservador(obs1);
+        assertEquals(netflix.getClientes().size(), 2);
+    }
 }

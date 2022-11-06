@@ -4,7 +4,6 @@ import br.inatel.cdg.serie.interfaces.iObservador;
 
 public class Observador implements iObservador {
 
-	private String nomeSerie, genero;
 	int id;
 
 	public Observador(int id) {
