@@ -14,6 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		List<Musicas> musicas = new ArrayList<Musicas>();
+		System.out.println("Mudança...");
 		
 		musicas.add(new Musicas("Musica1", 3));
 		musicas.add(new Musicas("Musica2", 5));
