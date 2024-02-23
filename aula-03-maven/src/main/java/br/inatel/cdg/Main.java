@@ -18,6 +18,8 @@ public class Main {
 		musicas.add(new Musicas("Musica1", 3));
 		musicas.add(new Musicas("Musica2", 5));
 
+		System.out.println("Mudança...");
+
 		//gson instanciado com PrettyPrinting()
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
